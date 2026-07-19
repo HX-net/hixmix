@@ -49,6 +49,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
+    final textTheme = Theme.of(context).textTheme;
     return Scaffold(
       body: SafeArea(
         child: Container(
@@ -74,26 +75,17 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   Text(
                     "YPUR DAILY DOES OF HAPPINESS",
-                    style: TextStyle(
-                      color: SolidColors.secondaryTextColor,
-                      fontSize: size.width / 22.24,
-                    ),
+                    style: textTheme.bodyLarge
                   ),
                   SizedBox(height: 30),
                   Text(
                     "Welcome Back!",
-                    style: TextStyle(
-                      color: SolidColors.primaryTextColor,
-                      fontSize: 20,
-                    ),
+                    style: textTheme.titleMedium
                   ),
                   // SizedBox(height: 5,),
                   Text(
                     "Login to use HixMix",
-                    style: TextStyle(
-                      color: SolidColors.secondaryTextColor,
-                      fontSize: 14,
-                    ),
+                    style: textTheme.bodyMedium
                   ),
                   SizedBox(height: 30),
                   Container(
@@ -105,7 +97,7 @@ class _LoginPageState extends State<LoginPage> {
                       padding: const EdgeInsets.all(8.0),
                       child: TextField(
                         controller: emailInput,
-                        style: TextStyle(color: SolidColors.inputTextColor),
+                        style: textTheme.labelSmall,
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           labelText: "Email Address",
@@ -113,9 +105,7 @@ class _LoginPageState extends State<LoginPage> {
                             Icons.email_outlined,
                             color: SolidColors.inputTextColor,
                           ),
-                          labelStyle: TextStyle(
-                            color: SolidColors.inputTextColor,
-                          ),
+                          labelStyle: textTheme.labelSmall
                         ),
                       ),
                     ),
@@ -131,7 +121,7 @@ class _LoginPageState extends State<LoginPage> {
                       child: TextField(
                         obscureText: true,
                         controller: passwordInput,
-                        style: TextStyle(color: SolidColors.inputTextColor),
+                        style: textTheme.labelSmall,
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           labelText: "Password",
@@ -139,9 +129,7 @@ class _LoginPageState extends State<LoginPage> {
                             Icons.lock_outline,
                             color: SolidColors.inputTextColor,
                           ),
-                          labelStyle: TextStyle(
-                            color: SolidColors.inputTextColor,
-                          ),
+                          labelStyle: textTheme.labelSmall
                         ),
                       ),
                     ),
@@ -163,9 +151,7 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                           Text(
                             "Remember me",
-                            style: TextStyle(
-                              color: SolidColors.secondaryTextColor,
-                            ),
+                            style: textTheme.bodyMedium
                           ),
                         ],
                       ),
@@ -175,9 +161,7 @@ class _LoginPageState extends State<LoginPage> {
                         },
                         child: Text(
                           "Forgot password?",
-                          style: TextStyle(
-                            color: SolidColors.secondaryTextColor,
-                          ),
+                          style: textTheme.bodyMedium
                         ),
                       ),
                     ],
@@ -202,9 +186,7 @@ class _LoginPageState extends State<LoginPage> {
                           child: Center(
                             child: Text(
                               "Login",
-                              style: TextStyle(
-                                color: SolidColors.primaryTextColor,
-                              ),
+                              style: textTheme.labelLarge
                             ),
                           ),
                         ),
@@ -214,7 +196,7 @@ class _LoginPageState extends State<LoginPage> {
                   SizedBox(height: 20),
                   Text(
                     "OR",
-                    style: TextStyle(color: SolidColors.secondaryTextColor),
+                    style: textTheme.bodyMedium,
                   ),
                   SizedBox(height: 20),
                   Container(
@@ -231,7 +213,9 @@ class _LoginPageState extends State<LoginPage> {
                       icon: Assets.images.googleLogo.image(),
                       label: Text(
                         "Continue with Google",
-                        style: TextStyle(color: Colors.black),
+                        style: textTheme.labelMedium?.copyWith(
+                          color: Colors.black
+                        )
                       ),
                     ),
                   ),
@@ -255,7 +239,9 @@ class _LoginPageState extends State<LoginPage> {
                       icon: Assets.images.facebookLogo.image(),
                       label: Text(
                         "Continue with Facebock",
-                        style: TextStyle(color: Colors.white),
+                        style: textTheme.labelMedium?.copyWith(
+                          color: Colors.white
+                        ),
                       ),
                     ),
                   ),
@@ -264,15 +250,12 @@ class _LoginPageState extends State<LoginPage> {
                     text: TextSpan(
                       children: [
                         TextSpan(
-                          style: TextStyle(
-                            color: SolidColors.secondaryTextColor,
-                          ),
+                          style: textTheme.bodyMedium,
                           text: "Don't have an account? ",
                         ),
                         TextSpan(
-                          style: TextStyle(
-                            color: SolidColors.scondaryColor,
-                            decoration: TextDecoration.underline,
+                          style: textTheme.bodyMedium?.copyWith(
+                            color: SolidColors.scondaryColor
                           ),
                           text: "Sign Up",
                           recognizer: signUpRecognizer,
@@ -288,17 +271,13 @@ class _LoginPageState extends State<LoginPage> {
                       text: TextSpan(
                         children: [
                           TextSpan(
-                            style: TextStyle(
-                              color: SolidColors.secondaryTextColor,
-                              fontSize: 8,
-                            ),
+                            style: textTheme.bodySmall,
                             text:
                                 "By signing up you indicate that you have read and\nagreed to the Patch ",
                           ),
                           TextSpan(
-                            style: TextStyle(
-                              color: SolidColors.scondaryColor,
-                              fontSize: 8,
+                            style: textTheme.bodySmall?.copyWith(
+                              color: SolidColors.scondaryColor
                             ),
                             text: "Terms of Service",
                             recognizer: showTermsOfService,
