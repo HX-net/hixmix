@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hixmix/core/theme/app_text_style.dart';
 import 'package:hixmix/pages/login/login_page.dart';
-import 'package:hixmix/pages/signUp/sign_up_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SignUpPage(),
+      theme: AppTheme.lightTheme,
+      
+      home: LoginPage(),
     );
   }
 }

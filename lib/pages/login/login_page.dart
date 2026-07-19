@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:hixmix/core/theme/app_colors.dart';
 import 'package:hixmix/gen/assets.gen.dart';
 import 'package:flutter/gestures.dart';
+import 'package:hixmix/pages/forgetPassword/forget_password_page.dart';
 import 'package:hixmix/pages/signUp/sign_up_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -157,6 +158,9 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       GestureDetector(
                         onTap: () {
+                          Navigator.push(context,
+                          CupertinoPageRoute(builder: (context)=> ForgetPasswordPage()));
+
                           print("forgot password");
                         },
                         child: Text(

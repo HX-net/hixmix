@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:hixmix/core/theme/app_colors.dart';
 import 'package:hixmix/gen/assets.gen.dart';
 import 'package:hixmix/pages/login/login_page.dart';
@@ -13,12 +14,12 @@ class SignUpPage extends StatefulWidget {
 }
 
 class _SignUpPage extends State<SignUpPage> {
-  late final TapGestureRecognizer LoginRecognizer;
+  late final TapGestureRecognizer loginRecognizer;
 
   @override
   void initState() {
     super.initState();
-    LoginRecognizer = TapGestureRecognizer()
+    loginRecognizer = TapGestureRecognizer()
       ..onTap = () {
         print("Sign Up clicked");
         Navigator.push(
@@ -30,12 +31,15 @@ class _SignUpPage extends State<SignUpPage> {
 
   @override
   void dispose() {
-    LoginRecognizer.dispose();
+    loginRecognizer.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
+    late TextEditingController userNameInput = TextEditingController();
+    late TextEditingController emailInput = TextEditingController();
+    late TextEditingController passwordInput = TextEditingController();
     final textTheme = Theme.of(context).textTheme;
     var size = MediaQuery.sizeOf(context);
     late bool sendNewsEmail = false;
@@ -73,6 +77,7 @@ class _SignUpPage extends State<SignUpPage> {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: TextField(
+                        controller: userNameInput,
                         style: textTheme.labelSmall,
                         decoration: InputDecoration(
                           border: InputBorder.none,
@@ -95,6 +100,7 @@ class _SignUpPage extends State<SignUpPage> {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: TextField(
+                        controller: emailInput,
                         style: textTheme.labelSmall,
                         decoration: InputDecoration(
                           border: InputBorder.none,
@@ -117,6 +123,7 @@ class _SignUpPage extends State<SignUpPage> {
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: TextField(
+                        controller: passwordInput,
                         style: textTheme.labelSmall,
                         decoration: InputDecoration(
                           border: InputBorder.none,
@@ -243,7 +250,7 @@ class _SignUpPage extends State<SignUpPage> {
                             color: SolidColors.scondaryColor,
                           ),
                           text: "Log in",
-                          recognizer: LoginRecognizer,
+                          recognizer: loginRecognizer,
                         ),
                       ],
                     ),
