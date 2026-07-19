@@ -75,18 +75,12 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   Text(
                     "YPUR DAILY DOES OF HAPPINESS",
-                    style: textTheme.bodyLarge
+                    style: textTheme.bodyLarge,
                   ),
                   SizedBox(height: 30),
-                  Text(
-                    "Welcome Back!",
-                    style: textTheme.titleMedium
-                  ),
+                  Text("Welcome Back!", style: textTheme.titleMedium),
                   // SizedBox(height: 5,),
-                  Text(
-                    "Login to use HixMix",
-                    style: textTheme.bodyMedium
-                  ),
+                  Text("Login to use HixMix", style: textTheme.bodyMedium),
                   SizedBox(height: 30),
                   Container(
                     decoration: BoxDecoration(
@@ -105,7 +99,7 @@ class _LoginPageState extends State<LoginPage> {
                             Icons.email_outlined,
                             color: SolidColors.inputTextColor,
                           ),
-                          labelStyle: textTheme.labelSmall
+                          labelStyle: textTheme.labelSmall,
                         ),
                       ),
                     ),
@@ -129,7 +123,7 @@ class _LoginPageState extends State<LoginPage> {
                             Icons.lock_outline,
                             color: SolidColors.inputTextColor,
                           ),
-                          labelStyle: textTheme.labelSmall
+                          labelStyle: textTheme.labelSmall,
                         ),
                       ),
                     ),
@@ -148,11 +142,17 @@ class _LoginPageState extends State<LoginPage> {
                                 print("remeber me check");
                               });
                             },
+                            fillColor: WidgetStateProperty.resolveWith<Color>((
+                              states,
+                            ) {
+                              if (states.contains(WidgetState.selected)) {
+                                return SolidColors.scondaryColor;
+                              }
+                              return Colors.transparent;
+                            }),
+                            shape: const CircleBorder(),
                           ),
-                          Text(
-                            "Remember me",
-                            style: textTheme.bodyMedium
-                          ),
+                          Text("Remember me", style: textTheme.bodyMedium),
                         ],
                       ),
                       GestureDetector(
@@ -161,7 +161,7 @@ class _LoginPageState extends State<LoginPage> {
                         },
                         child: Text(
                           "Forgot password?",
-                          style: textTheme.bodyMedium
+                          style: textTheme.bodyMedium,
                         ),
                       ),
                     ],
@@ -184,20 +184,14 @@ class _LoginPageState extends State<LoginPage> {
                         child: SizedBox(
                           height: 50,
                           child: Center(
-                            child: Text(
-                              "Login",
-                              style: textTheme.labelLarge
-                            ),
+                            child: Text("Login", style: textTheme.labelLarge),
                           ),
                         ),
                       ),
                     ),
                   ),
                   SizedBox(height: 20),
-                  Text(
-                    "OR",
-                    style: textTheme.bodyMedium,
-                  ),
+                  Text("OR", style: textTheme.bodyMedium),
                   SizedBox(height: 20),
                   Container(
                     width: double.infinity,
@@ -214,8 +208,8 @@ class _LoginPageState extends State<LoginPage> {
                       label: Text(
                         "Continue with Google",
                         style: textTheme.labelMedium?.copyWith(
-                          color: Colors.black
-                        )
+                          color: Colors.black,
+                        ),
                       ),
                     ),
                   ),
@@ -240,7 +234,7 @@ class _LoginPageState extends State<LoginPage> {
                       label: Text(
                         "Continue with Facebock",
                         style: textTheme.labelMedium?.copyWith(
-                          color: Colors.white
+                          color: Colors.white,
                         ),
                       ),
                     ),
@@ -255,7 +249,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                         TextSpan(
                           style: textTheme.bodyMedium?.copyWith(
-                            color: SolidColors.scondaryColor
+                            color: SolidColors.scondaryColor,
                           ),
                           text: "Sign Up",
                           recognizer: signUpRecognizer,
@@ -277,7 +271,7 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                           TextSpan(
                             style: textTheme.bodySmall?.copyWith(
-                              color: SolidColors.scondaryColor
+                              color: SolidColors.scondaryColor,
                             ),
                             text: "Terms of Service",
                             recognizer: showTermsOfService,
