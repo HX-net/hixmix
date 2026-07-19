@@ -33,7 +33,7 @@ class AppTheme {
           color: SolidColors.secondaryTextColor,
         ),
         bodySmall: TextStyle(
-          fontSize: 10,
+          fontSize: 8,
           fontWeight: FontWeight.w400,
           color: SolidColors.secondaryTextColor,
         ),
@@ -45,12 +45,12 @@ class AppTheme {
         labelMedium: TextStyle(
           fontSize: 14,
           fontWeight: FontWeight.w800,
-          color: SolidColors.inputTextColor,
+          color: SolidColors.primaryTextColor,
         ),
         labelLarge: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.w800,
-          color: SolidColors.inputTextColor,
+          color: SolidColors.primaryTextColor,
         ),
       ),
     );
