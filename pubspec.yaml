@@ -77,14 +77,31 @@ flutter:
   fonts:
     - family: CircularStd
       fonts:
-        - asset: assets/fonts/CircularStd-Medium.ttf
+        - asset: assets/fonts/Circular/CircularStd-Medium.ttf
           weight: 200
-        - asset: assets/fonts/CircularStd-Book.ttf
+        - asset: assets/fonts/Circular/CircularStd-Book.ttf
           weight: 400
-        - asset: assets/fonts/CircularStd-Bold.ttf
+        - asset: assets/fonts/Circular/CircularStd-Bold.ttf
           weight: 600
-        - asset: assets/fonts/CircularStd-Black.ttf
+        - asset: assets/fonts/Circular/CircularStd-Black.ttf
           weight: 800
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato/Lato-Reqular.ttf
+          weight: 400
+        - asset: assets/fonts/Lato/Lato-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/Lato/Lato-Black.ttf
+          weight: 800
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Reqular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins/Poppins-Black.ttf
+          weight: 800
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
