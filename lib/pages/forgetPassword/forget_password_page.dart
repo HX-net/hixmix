@@ -44,7 +44,7 @@ class _ForgetPasswordPage extends State<ForgetPasswordPage> {
             gradient: RadialGradient(
               center: Alignment.center,
               radius: 1.2,
-              colors: GradiantColors.bgColor,
+              colors: AuthGradiant.bgColor,
             ),
           ),
           child: Center(
@@ -62,7 +62,7 @@ class _ForgetPasswordPage extends State<ForgetPasswordPage> {
                   SizedBox(height: 30),
                   Container(
                     decoration: BoxDecoration(
-                      color: SolidColors.inputBackgroundColor,
+                      color: AuthColors.inputBackgroundColor,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Padding(
@@ -74,7 +74,7 @@ class _ForgetPasswordPage extends State<ForgetPasswordPage> {
                           border: InputBorder.none,
                           prefixIcon: Icon(
                             Icons.email_outlined,
-                            color: SolidColors.inputTextColor,
+                            color: AuthColors.inputTextColor,
                           ),
                           label: Text(
                             "Email Address",
@@ -91,7 +91,7 @@ class _ForgetPasswordPage extends State<ForgetPasswordPage> {
                     child: Ink(
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
-                          colors: GradiantColors.buttonColor,
+                          colors: AuthGradiant.buttonColor,
                         ),
                         borderRadius: BorderRadius.circular(12),
                       ),
@@ -122,7 +122,7 @@ class _ForgetPasswordPage extends State<ForgetPasswordPage> {
                         ),
                         TextSpan(
                           style: textTheme.bodyMedium?.copyWith(
-                            color: SolidColors.scondaryColor,
+                            color: AuthColors.scondaryColor,
                           ),
                           text: "Log in ",
                           recognizer: loginRecognizer

@@ -10,47 +10,47 @@ class AppTheme {
         titleLarge: TextStyle(
           fontSize: 33,
           fontWeight: FontWeight.w800,
-          color: SolidColors.primaryTextColor,
+          color: AuthColors.primaryTextColor,
         ),
         titleMedium: TextStyle(
           fontSize: 24,
           fontWeight: FontWeight.w800,
-          color: SolidColors.primaryTextColor,
+          color: AuthColors.primaryTextColor,
         ),
         titleSmall: TextStyle(
           fontSize: 22,
           fontWeight: FontWeight.w800,
-          color: SolidColors.primaryTextColor,
+          color: AuthColors.primaryTextColor,
         ),
         bodyLarge: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.w400,
-          color: SolidColors.secondaryTextColor,
+          color: AuthColors.secondaryTextColor,
         ),
         bodyMedium: TextStyle(
           fontSize: 14,
           fontWeight: FontWeight.w400,
-          color: SolidColors.secondaryTextColor,
+          color: AuthColors.secondaryTextColor,
         ),
         bodySmall: TextStyle(
           fontSize: 8,
           fontWeight: FontWeight.w400,
-          color: SolidColors.secondaryTextColor,
+          color: AuthColors.secondaryTextColor,
         ),
         labelSmall: TextStyle(
           fontSize: 14,
           fontWeight: FontWeight.w400,
-          color: SolidColors.inputTextColor,
+          color: AuthColors.inputTextColor,
         ),
         labelMedium: TextStyle(
           fontSize: 14,
           fontWeight: FontWeight.w800,
-          color: SolidColors.primaryTextColor,
+          color: AuthColors.primaryTextColor,
         ),
         labelLarge: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.w800,
-          color: SolidColors.primaryTextColor,
+          color: AuthColors.primaryTextColor,
         ),
       ),
     );

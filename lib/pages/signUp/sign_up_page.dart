@@ -53,7 +53,7 @@ class _SignUpPage extends State<SignUpPage> {
             gradient: RadialGradient(
               center: Alignment.center,
               radius: 1.2,
-              colors: GradiantColors.bgColor,
+              colors: AuthGradiant.bgColor,
             ),
           ),
           child: Center(
@@ -71,7 +71,7 @@ class _SignUpPage extends State<SignUpPage> {
                   Container(
                     height: 50,
                     decoration: BoxDecoration(
-                      color: SolidColors.inputBackgroundColor,
+                      color: AuthColors.inputBackgroundColor,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Padding(
@@ -83,7 +83,7 @@ class _SignUpPage extends State<SignUpPage> {
                           border: InputBorder.none,
                           prefixIcon: Icon(
                             Icons.person,
-                            color: SolidColors.inputTextColor,
+                            color: AuthColors.inputTextColor,
                           ),
                           label: Text("User Name"),
                         ),
@@ -94,7 +94,7 @@ class _SignUpPage extends State<SignUpPage> {
                   Container(
                     height: 50,
                     decoration: BoxDecoration(
-                      color: SolidColors.inputBackgroundColor,
+                      color: AuthColors.inputBackgroundColor,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Padding(
@@ -106,7 +106,7 @@ class _SignUpPage extends State<SignUpPage> {
                           border: InputBorder.none,
                           prefixIcon: Icon(
                             Icons.email_outlined,
-                            color: SolidColors.inputTextColor,
+                            color: AuthColors.inputTextColor,
                           ),
                           label: Text("Email"),
                         ),
@@ -117,7 +117,7 @@ class _SignUpPage extends State<SignUpPage> {
                   Container(
                     height: 50,
                     decoration: BoxDecoration(
-                      color: SolidColors.inputBackgroundColor,
+                      color: AuthColors.inputBackgroundColor,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Padding(
@@ -129,7 +129,7 @@ class _SignUpPage extends State<SignUpPage> {
                           border: InputBorder.none,
                           prefixIcon: Icon(
                             Icons.lock_outline,
-                            color: SolidColors.inputTextColor,
+                            color: AuthColors.inputTextColor,
                           ),
                           label: Text("Password"),
                         ),
@@ -151,7 +151,7 @@ class _SignUpPage extends State<SignUpPage> {
                           states,
                         ) {
                           if (states.contains(WidgetState.selected)) {
-                            return SolidColors.scondaryColor;
+                            return AuthColors.scondaryColor;
                           }
                           return Colors.transparent;
                         }),
@@ -170,7 +170,7 @@ class _SignUpPage extends State<SignUpPage> {
                     child: Ink(
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
-                          colors: GradiantColors.buttonColor,
+                          colors: AuthGradiant.buttonColor,
                         ),
                         borderRadius: BorderRadius.circular(12),
                       ),
@@ -216,13 +216,13 @@ class _SignUpPage extends State<SignUpPage> {
                     width: double.infinity,
                     height: 60,
                     decoration: BoxDecoration(
-                      color: SolidColors.facebockButtonColor,
+                      color: AuthColors.facebockButtonColor,
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: ElevatedButton.icon(
                       style: ButtonStyle(
                         backgroundColor: WidgetStatePropertyAll(
-                          SolidColors.facebockButtonColor,
+                          AuthColors.facebockButtonColor,
                         ),
                       ),
                       onPressed: () {
@@ -247,7 +247,7 @@ class _SignUpPage extends State<SignUpPage> {
                         ),
                         TextSpan(
                           style: textTheme.bodyMedium?.copyWith(
-                            color: SolidColors.scondaryColor,
+                            color: AuthColors.scondaryColor,
                           ),
                           text: "Log in",
                           recognizer: loginRecognizer,

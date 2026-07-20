@@ -6,6 +6,7 @@ import 'package:hixmix/core/theme/app_colors.dart';
 import 'package:hixmix/gen/assets.gen.dart';
 import 'package:flutter/gestures.dart';
 import 'package:hixmix/pages/forgetPassword/forget_password_page.dart';
+import 'package:hixmix/pages/home/home_page.dart';
 import 'package:hixmix/pages/signUp/sign_up_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -51,6 +52,11 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     final textTheme = Theme.of(context).textTheme;
+
+    void loginCheck() {
+      Navigator.push(context, CupertinoPageRoute(builder: (context) => HomePage()));
+    }
+
     return Scaffold(
       body: SafeArea(
         child: Container(
@@ -60,7 +66,7 @@ class _LoginPageState extends State<LoginPage> {
             gradient: RadialGradient(
               center: Alignment.center,
               radius: 1.2,
-              colors: GradiantColors.bgColor,
+              colors: AuthGradiant.bgColor,
             ),
           ),
           child: Center(
@@ -85,7 +91,7 @@ class _LoginPageState extends State<LoginPage> {
                   SizedBox(height: 30),
                   Container(
                     decoration: BoxDecoration(
-                      color: SolidColors.inputBackgroundColor,
+                      color: AuthColors.inputBackgroundColor,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Padding(
@@ -98,7 +104,7 @@ class _LoginPageState extends State<LoginPage> {
                           labelText: "Email Address",
                           prefixIcon: Icon(
                             Icons.email_outlined,
-                            color: SolidColors.inputTextColor,
+                            color: AuthColors.inputTextColor,
                           ),
                           labelStyle: textTheme.labelSmall,
                         ),
@@ -108,7 +114,7 @@ class _LoginPageState extends State<LoginPage> {
                   SizedBox(height: 15),
                   Container(
                     decoration: BoxDecoration(
-                      color: SolidColors.inputBackgroundColor,
+                      color: AuthColors.inputBackgroundColor,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Padding(
@@ -122,7 +128,7 @@ class _LoginPageState extends State<LoginPage> {
                           labelText: "Password",
                           prefixIcon: Icon(
                             Icons.lock_outline,
-                            color: SolidColors.inputTextColor,
+                            color: AuthColors.inputTextColor,
                           ),
                           labelStyle: textTheme.labelSmall,
                         ),
@@ -147,7 +153,7 @@ class _LoginPageState extends State<LoginPage> {
                               states,
                             ) {
                               if (states.contains(WidgetState.selected)) {
-                                return SolidColors.scondaryColor;
+                                return AuthColors.scondaryColor;
                               }
                               return Colors.transparent;
                             }),
@@ -158,8 +164,12 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Navigator.push(context,
-                          CupertinoPageRoute(builder: (context)=> ForgetPasswordPage()));
+                          Navigator.push(
+                            context,
+                            CupertinoPageRoute(
+                              builder: (context) => ForgetPasswordPage(),
+                            ),
+                          );
 
                           print("forgot password");
                         },
@@ -176,13 +186,14 @@ class _LoginPageState extends State<LoginPage> {
                     child: Ink(
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
-                          colors: GradiantColors.buttonColor,
+                          colors: AuthGradiant.buttonColor,
                         ),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: InkWell(
                         borderRadius: BorderRadius.circular(12),
                         onTap: () {
+                          loginCheck();
                           print("login clicked");
                         },
                         child: SizedBox(
@@ -222,13 +233,13 @@ class _LoginPageState extends State<LoginPage> {
                     width: double.infinity,
                     height: 50,
                     decoration: BoxDecoration(
-                      color: SolidColors.facebockButtonColor,
+                      color: AuthColors.facebockButtonColor,
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: ElevatedButton.icon(
                       style: ButtonStyle(
                         backgroundColor: WidgetStatePropertyAll(
-                          SolidColors.facebockButtonColor,
+                          AuthColors.facebockButtonColor,
                         ),
                       ),
                       onPressed: () {
@@ -253,7 +264,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                         TextSpan(
                           style: textTheme.bodyMedium?.copyWith(
-                            color: SolidColors.scondaryColor,
+                            color: AuthColors.scondaryColor,
                           ),
                           text: "Sign Up",
                           recognizer: signUpRecognizer,
@@ -275,7 +286,7 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                           TextSpan(
                             style: textTheme.bodySmall?.copyWith(
-                              color: SolidColors.scondaryColor,
+                              color: AuthColors.scondaryColor,
                             ),
                             text: "Terms of Service",
                             recognizer: showTermsOfService,
