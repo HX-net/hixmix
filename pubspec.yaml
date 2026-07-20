@@ -87,7 +87,7 @@ flutter:
           weight: 800
     - family: Lato
       fonts:
-        - asset: assets/fonts/Lato/Lato-Reqular.ttf
+        - asset: assets/fonts/Lato/Lato-Regular.ttf
           weight: 400
         - asset: assets/fonts/Lato/Lato-Bold.ttf
           weight: 600
@@ -95,7 +95,7 @@ flutter:
           weight: 800
     - family: Poppins
       fonts:
-        - asset: assets/fonts/Poppins/Poppins-Reqular.ttf
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
           weight: 400
         - asset: assets/fonts/Poppins/Poppins-Bold.ttf
           weight: 600
