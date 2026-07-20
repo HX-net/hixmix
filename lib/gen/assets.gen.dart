@@ -14,6 +14,9 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// Directory path: assets/images/artist
+  $AssetsImagesArtistGen get artist => const $AssetsImagesArtistGen();
+
   /// File path: assets/images/black-logo.png
   AssetGenImage get blackLogo =>
       const AssetGenImage('assets/images/black-logo.png');
@@ -22,12 +25,22 @@ class $AssetsImagesGen {
   AssetGenImage get facebookLogo =>
       const AssetGenImage('assets/images/facebook-logo.png');
 
+  /// Directory path: assets/images/geners
+  $AssetsImagesGenersGen get geners => const $AssetsImagesGenersGen();
+
   /// File path: assets/images/google-logo.png
   AssetGenImage get googleLogo =>
       const AssetGenImage('assets/images/google-logo.png');
 
   /// File path: assets/images/logo.png
   AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
+
+  /// Directory path: assets/images/moods
+  $AssetsImagesMoodsGen get moods => const $AssetsImagesMoodsGen();
+
+  /// Directory path: assets/images/music_cover
+  $AssetsImagesMusicCoverGen get musicCover =>
+      const $AssetsImagesMusicCoverGen();
 
   /// File path: assets/images/splash_bg.png
   AssetGenImage get splashBg =>
@@ -40,6 +53,241 @@ class $AssetsImagesGen {
     googleLogo,
     logo,
     splashBg,
+  ];
+}
+
+class $AssetsImagesArtistGen {
+  const $AssetsImagesArtistGen();
+
+  /// File path: assets/images/artist/Bowie.png
+  AssetGenImage get bowie =>
+      const AssetGenImage('assets/images/artist/Bowie.png');
+
+  /// File path: assets/images/artist/Mask Group 321.png
+  AssetGenImage get maskGroup321 =>
+      const AssetGenImage('assets/images/artist/Mask Group 321.png');
+
+  /// File path: assets/images/artist/Queen.png
+  AssetGenImage get queen =>
+      const AssetGenImage('assets/images/artist/Queen.png');
+
+  /// File path: assets/images/artist/The Beatles.png
+  AssetGenImage get theBeatles =>
+      const AssetGenImage('assets/images/artist/The Beatles.png');
+
+  /// File path: assets/images/artist/The Clash.png
+  AssetGenImage get theClash =>
+      const AssetGenImage('assets/images/artist/The Clash.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+    bowie,
+    maskGroup321,
+    queen,
+    theBeatles,
+    theClash,
+  ];
+}
+
+class $AssetsImagesGenersGen {
+  const $AssetsImagesGenersGen();
+
+  /// File path: assets/images/geners/BLUES.png
+  AssetGenImage get blues =>
+      const AssetGenImage('assets/images/geners/BLUES.png');
+
+  /// File path: assets/images/geners/Classical.png
+  AssetGenImage get classical =>
+      const AssetGenImage('assets/images/geners/Classical.png');
+
+  /// File path: assets/images/geners/Country.png
+  AssetGenImage get country =>
+      const AssetGenImage('assets/images/geners/Country.png');
+
+  /// File path: assets/images/geners/DANCE - ELECTRO.png
+  AssetGenImage get danceElectro =>
+      const AssetGenImage('assets/images/geners/DANCE - ELECTRO.png');
+
+  /// File path: assets/images/geners/DECADES.png
+  AssetGenImage get decades =>
+      const AssetGenImage('assets/images/geners/DECADES.png');
+
+  /// File path: assets/images/geners/HIP - HOP.png
+  AssetGenImage get hipHop =>
+      const AssetGenImage('assets/images/geners/HIP - HOP.png');
+
+  /// File path: assets/images/geners/Indie.png
+  AssetGenImage get indie =>
+      const AssetGenImage('assets/images/geners/Indie.png');
+
+  /// File path: assets/images/geners/Instrumentals.png
+  AssetGenImage get instrumentals =>
+      const AssetGenImage('assets/images/geners/Instrumentals.png');
+
+  /// File path: assets/images/geners/JAZZ.png
+  AssetGenImage get jazz =>
+      const AssetGenImage('assets/images/geners/JAZZ.png');
+
+  /// File path: assets/images/geners/K-POP.png
+  AssetGenImage get kPop =>
+      const AssetGenImage('assets/images/geners/K-POP.png');
+
+  /// File path: assets/images/geners/LATIN.png
+  AssetGenImage get latin =>
+      const AssetGenImage('assets/images/geners/LATIN.png');
+
+  /// File path: assets/images/geners/METAl.png
+  AssetGenImage get mETAl =>
+      const AssetGenImage('assets/images/geners/METAl.png');
+
+  /// File path: assets/images/geners/POP.png
+  AssetGenImage get pop => const AssetGenImage('assets/images/geners/POP.png');
+
+  /// File path: assets/images/geners/PUNK.png
+  AssetGenImage get punk =>
+      const AssetGenImage('assets/images/geners/PUNK.png');
+
+  /// File path: assets/images/geners/R&B.png
+  AssetGenImage get rB => const AssetGenImage('assets/images/geners/R&B.png');
+
+  /// File path: assets/images/geners/REGGAE.png
+  AssetGenImage get reggae =>
+      const AssetGenImage('assets/images/geners/REGGAE.png');
+
+  /// File path: assets/images/geners/SOUL FUNK.png
+  AssetGenImage get soulFunk =>
+      const AssetGenImage('assets/images/geners/SOUL FUNK.png');
+
+  /// File path: assets/images/geners/rock.png
+  AssetGenImage get rock =>
+      const AssetGenImage('assets/images/geners/rock.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+    blues,
+    classical,
+    country,
+    danceElectro,
+    decades,
+    hipHop,
+    indie,
+    instrumentals,
+    jazz,
+    kPop,
+    latin,
+    mETAl,
+    pop,
+    punk,
+    rB,
+    reggae,
+    soulFunk,
+    rock,
+  ];
+}
+
+class $AssetsImagesMoodsGen {
+  const $AssetsImagesMoodsGen();
+
+  /// File path: assets/images/moods/CHILL.png
+  AssetGenImage get chill =>
+      const AssetGenImage('assets/images/moods/CHILL.png');
+
+  /// File path: assets/images/moods/COMEDY.png
+  AssetGenImage get comedy =>
+      const AssetGenImage('assets/images/moods/COMEDY.png');
+
+  /// File path: assets/images/moods/DINNER.png
+  AssetGenImage get dinner =>
+      const AssetGenImage('assets/images/moods/DINNER.png');
+
+  /// File path: assets/images/moods/DRIVING.png
+  AssetGenImage get driving =>
+      const AssetGenImage('assets/images/moods/DRIVING.png');
+
+  /// File path: assets/images/moods/FAMILY.png
+  AssetGenImage get family =>
+      const AssetGenImage('assets/images/moods/FAMILY.png');
+
+  /// File path: assets/images/moods/FOCUS.png
+  AssetGenImage get focus =>
+      const AssetGenImage('assets/images/moods/FOCUS.png');
+
+  /// File path: assets/images/moods/PARTY.png
+  AssetGenImage get party =>
+      const AssetGenImage('assets/images/moods/PARTY.png');
+
+  /// File path: assets/images/moods/RAINY DAY.png
+  AssetGenImage get rainyDay =>
+      const AssetGenImage('assets/images/moods/RAINY DAY.png');
+
+  /// File path: assets/images/moods/ROMANCE.png
+  AssetGenImage get romance =>
+      const AssetGenImage('assets/images/moods/ROMANCE.png');
+
+  /// File path: assets/images/moods/SLEEP.png
+  AssetGenImage get sleep =>
+      const AssetGenImage('assets/images/moods/SLEEP.png');
+
+  /// File path: assets/images/moods/TRAVEL.png
+  AssetGenImage get travel =>
+      const AssetGenImage('assets/images/moods/TRAVEL.png');
+
+  /// File path: assets/images/moods/WORKOUT.png
+  AssetGenImage get workout =>
+      const AssetGenImage('assets/images/moods/WORKOUT.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+    chill,
+    comedy,
+    dinner,
+    driving,
+    family,
+    focus,
+    party,
+    rainyDay,
+    romance,
+    sleep,
+    travel,
+    workout,
+  ];
+}
+
+class $AssetsImagesMusicCoverGen {
+  const $AssetsImagesMusicCoverGen();
+
+  /// File path: assets/images/music_cover/Image 574.png
+  AssetGenImage get image574 =>
+      const AssetGenImage('assets/images/music_cover/Image 574.png');
+
+  /// File path: assets/images/music_cover/Image 575.png
+  AssetGenImage get image575 =>
+      const AssetGenImage('assets/images/music_cover/Image 575.png');
+
+  /// File path: assets/images/music_cover/Image 576.png
+  AssetGenImage get image576 =>
+      const AssetGenImage('assets/images/music_cover/Image 576.png');
+
+  /// File path: assets/images/music_cover/Image 693.png
+  AssetGenImage get image693 =>
+      const AssetGenImage('assets/images/music_cover/Image 693.png');
+
+  /// File path: assets/images/music_cover/Image 695.png
+  AssetGenImage get image695 =>
+      const AssetGenImage('assets/images/music_cover/Image 695.png');
+
+  /// File path: assets/images/music_cover/Image 696.png
+  AssetGenImage get image696 =>
+      const AssetGenImage('assets/images/music_cover/Image 696.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+    image574,
+    image575,
+    image576,
+    image693,
+    image695,
+    image696,
   ];
 }
 
