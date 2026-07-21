@@ -42,6 +42,9 @@ class $AssetsImagesGen {
   $AssetsImagesMusicCoverGen get musicCover =>
       const $AssetsImagesMusicCoverGen();
 
+  /// Directory path: assets/images/playlist
+  $AssetsImagesPlaylistGen get playlist => const $AssetsImagesPlaylistGen();
+
   /// File path: assets/images/splash_bg.png
   AssetGenImage get splashBg =>
       const AssetGenImage('assets/images/splash_bg.png');
@@ -228,6 +231,14 @@ class $AssetsImagesMoodsGen {
   AssetGenImage get sleep =>
       const AssetGenImage('assets/images/moods/SLEEP.png');
 
+  /// File path: assets/images/moods/STORIES.png
+  AssetGenImage get stories =>
+      const AssetGenImage('assets/images/moods/STORIES.png');
+
+  /// File path: assets/images/moods/TOP 50.png
+  AssetGenImage get top50 =>
+      const AssetGenImage('assets/images/moods/TOP 50.png');
+
   /// File path: assets/images/moods/TRAVEL.png
   AssetGenImage get travel =>
       const AssetGenImage('assets/images/moods/TRAVEL.png');
@@ -248,6 +259,8 @@ class $AssetsImagesMoodsGen {
     rainyDay,
     romance,
     sleep,
+    stories,
+    top50,
     travel,
     workout,
   ];
@@ -288,6 +301,114 @@ class $AssetsImagesMusicCoverGen {
     image693,
     image695,
     image696,
+  ];
+}
+
+class $AssetsImagesPlaylistGen {
+  const $AssetsImagesPlaylistGen();
+
+  /// File path: assets/images/playlist/70s ROCK.png
+  AssetGenImage get a70sROCK =>
+      const AssetGenImage('assets/images/playlist/70s ROCK.png');
+
+  /// File path: assets/images/playlist/80s ROCK.png
+  AssetGenImage get a80sROCK =>
+      const AssetGenImage('assets/images/playlist/80s ROCK.png');
+
+  /// File path: assets/images/playlist/90s ALTERNATIVE.png
+  AssetGenImage get a90sALTERNATIVE =>
+      const AssetGenImage('assets/images/playlist/90s ALTERNATIVE.png');
+
+  /// File path: assets/images/playlist/COMPOSERS.png
+  AssetGenImage get composers =>
+      const AssetGenImage('assets/images/playlist/COMPOSERS.png');
+
+  /// File path: assets/images/playlist/Deep Focus.png
+  AssetGenImage get deepFocus =>
+      const AssetGenImage('assets/images/playlist/Deep Focus.png');
+
+  /// File path: assets/images/playlist/GUITAR SOLOS.png
+  AssetGenImage get guitarSolos =>
+      const AssetGenImage('assets/images/playlist/GUITAR SOLOS.png');
+
+  /// File path: assets/images/playlist/HIP-HOP HITS.png
+  AssetGenImage get hipHopHits =>
+      const AssetGenImage('assets/images/playlist/HIP-HOP HITS.png');
+
+  /// File path: assets/images/playlist/INDIE ROCK.png
+  AssetGenImage get indieRock =>
+      const AssetGenImage('assets/images/playlist/INDIE ROCK.png');
+
+  /// File path: assets/images/playlist/LOVE ROCK.png
+  AssetGenImage get loveRock =>
+      const AssetGenImage('assets/images/playlist/LOVE ROCK.png');
+
+  /// File path: assets/images/playlist/PLAYLIST RADIO.png
+  AssetGenImage get playlistRadio =>
+      const AssetGenImage('assets/images/playlist/PLAYLIST RADIO.png');
+
+  /// File path: assets/images/playlist/POP FRESH.png
+  AssetGenImage get popFresh =>
+      const AssetGenImage('assets/images/playlist/POP FRESH.png');
+
+  /// File path: assets/images/playlist/POP ROCK.png
+  AssetGenImage get popRock =>
+      const AssetGenImage('assets/images/playlist/POP ROCK.png');
+
+  /// File path: assets/images/playlist/PROG ROCK.png
+  AssetGenImage get progRock =>
+      const AssetGenImage('assets/images/playlist/PROG ROCK.png');
+
+  /// File path: assets/images/playlist/Productive Morning.png
+  AssetGenImage get productiveMorning =>
+      const AssetGenImage('assets/images/playlist/Productive Morning.png');
+
+  /// File path: assets/images/playlist/RAP BANGERS.png
+  AssetGenImage get rapBangers =>
+      const AssetGenImage('assets/images/playlist/RAP BANGERS.png');
+
+  /// File path: assets/images/playlist/ROCKABILLY.png
+  AssetGenImage get rockabilly =>
+      const AssetGenImage('assets/images/playlist/ROCKABILLY.png');
+
+  /// File path: assets/images/playlist/Repeat Grid 1.png
+  AssetGenImage get repeatGrid1 =>
+      const AssetGenImage('assets/images/playlist/Repeat Grid 1.png');
+
+  /// File path: assets/images/playlist/WORKOUT rock.png
+  AssetGenImage get wORKOUTRock =>
+      const AssetGenImage('assets/images/playlist/WORKOUT rock.png');
+
+  /// File path: assets/images/playlist/White Noise.png
+  AssetGenImage get whiteNoise =>
+      const AssetGenImage('assets/images/playlist/White Noise.png');
+
+  /// File path: assets/images/playlist/Woodstock Legends.png
+  AssetGenImage get woodstockLegends =>
+      const AssetGenImage('assets/images/playlist/Woodstock Legends.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+    a70sROCK,
+    a80sROCK,
+    a90sALTERNATIVE,
+    composers,
+    deepFocus,
+    guitarSolos,
+    hipHopHits,
+    indieRock,
+    loveRock,
+    playlistRadio,
+    popFresh,
+    popRock,
+    progRock,
+    productiveMorning,
+    rapBangers,
+    rockabilly,
+    repeatGrid1,
+    wORKOUTRock,
+    whiteNoise,
+    woodstockLegends,
   ];
 }
 
