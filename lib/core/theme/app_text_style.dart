@@ -98,7 +98,13 @@ class AppTextStyles {
     fontFamily: AppFonts.thirty,
     fontSize: 12,
     fontWeight: FontWeight.w400,
-    color: AppColors.primaryTextColor,
+    color: AppColors.secondaryTextColor,
+  );
+  static const itemDescriptions = TextStyle(
+    fontFamily: AppFonts.thirty,
+    fontSize: 12,
+    fontWeight: FontWeight.w400,
+    color: AppColors.secondaryTextColor,
   );
   static const description = TextStyle(
     fontFamily: AppFonts.thirty,
@@ -110,7 +116,7 @@ class AppTextStyles {
     fontFamily: AppFonts.thirty,
     fontSize: 14,
     fontWeight: FontWeight.w400,
-    color: AppColors.primaryTextColor,
+    color: AppColors.secondaryTextColor,
   );
   static const buttonLabel = TextStyle(
     fontFamily: AppFonts.thirty,
