@@ -45,6 +45,9 @@ class $AssetsImagesGen {
   /// Directory path: assets/images/playlist
   $AssetsImagesPlaylistGen get playlist => const $AssetsImagesPlaylistGen();
 
+  /// Directory path: assets/images/podcast
+  $AssetsImagesPodcastGen get podcast => const $AssetsImagesPodcastGen();
+
   /// File path: assets/images/splash_bg.png
   AssetGenImage get splashBg =>
       const AssetGenImage('assets/images/splash_bg.png');
@@ -409,6 +412,121 @@ class $AssetsImagesPlaylistGen {
     wORKOUTRock,
     whiteNoise,
     woodstockLegends,
+  ];
+}
+
+class $AssetsImagesPodcastGen {
+  const $AssetsImagesPodcastGen();
+
+  /// File path: assets/images/podcast/1 - REALISING.png
+  AssetGenImage get a1REALISING =>
+      const AssetGenImage('assets/images/podcast/1 - REALISING.png');
+
+  /// File path: assets/images/podcast/Image 549.png
+  AssetGenImage get image549 =>
+      const AssetGenImage('assets/images/podcast/Image 549.png');
+
+  /// File path: assets/images/podcast/Image 550.png
+  AssetGenImage get image550 =>
+      const AssetGenImage('assets/images/podcast/Image 550.png');
+
+  /// File path: assets/images/podcast/Image 551.png
+  AssetGenImage get image551 =>
+      const AssetGenImage('assets/images/podcast/Image 551.png');
+
+  /// File path: assets/images/podcast/Kristen Bell.png
+  AssetGenImage get kristenBell =>
+      const AssetGenImage('assets/images/podcast/Kristen Bell.png');
+
+  /// File path: assets/images/podcast/They Taken Her.png
+  AssetGenImage get theyTakenHer =>
+      const AssetGenImage('assets/images/podcast/They Taken Her.png');
+
+  /// File path: assets/images/podcast/We are Losing Our Jobs.png
+  AssetGenImage get weAreLosingOurJobs =>
+      const AssetGenImage('assets/images/podcast/We are Losing Our Jobs.png');
+
+  /// Directory path: assets/images/podcast/category
+  $AssetsImagesPodcastCategoryGen get category =>
+      const $AssetsImagesPodcastCategoryGen();
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+    a1REALISING,
+    image549,
+    image550,
+    image551,
+    kristenBell,
+    theyTakenHer,
+    weAreLosingOurJobs,
+  ];
+}
+
+class $AssetsImagesPodcastCategoryGen {
+  const $AssetsImagesPodcastCategoryGen();
+
+  /// File path: assets/images/podcast/category/Arts.png
+  AssetGenImage get arts =>
+      const AssetGenImage('assets/images/podcast/category/Arts.png');
+
+  /// File path: assets/images/podcast/category/Business &.png
+  AssetGenImage get business =>
+      const AssetGenImage('assets/images/podcast/category/Business &.png');
+
+  /// File path: assets/images/podcast/category/COMEDY podcast.png
+  AssetGenImage get cOMEDYPodcast =>
+      const AssetGenImage('assets/images/podcast/category/COMEDY podcast.png');
+
+  /// File path: assets/images/podcast/category/EDU.png
+  AssetGenImage get edu =>
+      const AssetGenImage('assets/images/podcast/category/EDU.png');
+
+  /// File path: assets/images/podcast/category/GAMES.png
+  AssetGenImage get games =>
+      const AssetGenImage('assets/images/podcast/category/GAMES.png');
+
+  /// File path: assets/images/podcast/category/Kids & Family.png
+  AssetGenImage get kidsFamily =>
+      const AssetGenImage('assets/images/podcast/category/Kids & Family.png');
+
+  /// File path: assets/images/podcast/category/Lifestyle &.png
+  AssetGenImage get lifestyle =>
+      const AssetGenImage('assets/images/podcast/category/Lifestyle &.png');
+
+  /// File path: assets/images/podcast/category/MUSIC.png
+  AssetGenImage get music =>
+      const AssetGenImage('assets/images/podcast/category/MUSIC.png');
+
+  /// File path: assets/images/podcast/category/News &.png
+  AssetGenImage get news =>
+      const AssetGenImage('assets/images/podcast/category/News &.png');
+
+  /// File path: assets/images/podcast/category/SPORTS.png
+  AssetGenImage get sports =>
+      const AssetGenImage('assets/images/podcast/category/SPORTS.png');
+
+  /// File path: assets/images/podcast/category/STORIES.png
+  AssetGenImage get stories =>
+      const AssetGenImage('assets/images/podcast/category/STORIES.png');
+
+  /// File path: assets/images/podcast/category/TOP 50.png
+  AssetGenImage get top50 =>
+      const AssetGenImage('assets/images/podcast/category/TOP 50.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+    arts,
+    business,
+    cOMEDYPodcast,
+    edu,
+    games,
+    kidsFamily,
+    lifestyle,
+    music,
+    news,
+    sports,
+    stories,
+    top50,
   ];
 }
 

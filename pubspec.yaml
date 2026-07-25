@@ -66,6 +66,8 @@ flutter:
     - assets/images/moods/
     - assets/images/music_cover/
     - assets/images/playlist/
+    - assets/images/podcast/
+    - assets/images/podcast/category/
     - assets/images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
