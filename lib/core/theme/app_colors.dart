@@ -33,6 +33,7 @@ class AppColors {
   static const Color navigationsBar = Color.fromARGB(255, 48, 48, 51);
   static const Color selectedTextColor = Color.fromARGB(255, 45, 206, 239);
   static const Color bgColor = Color.fromARGB(255, 20, 20, 20);
+  static const Color progressBarColor = Color.fromARGB(255, 213, 213, 213);
 }
 
 class AppGradiant {
