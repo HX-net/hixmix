@@ -1,7 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hixmix/core/theme/app_colors.dart';
 import 'package:hixmix/core/theme/app_text_style.dart';
 import 'package:hixmix/gen/assets.gen.dart';
+import 'package:hixmix/pages/song/song_page.dart';
 
 class OverviewPage extends StatelessWidget {
   const OverviewPage({super.key});
@@ -40,6 +42,7 @@ class OverviewPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
                       child: _musicCard(
+                        context: context,
                         image: Assets.images.playlist.playlistRadio.provider(),
                         label: "70s Rock Anthems Radio",
                       ),
@@ -47,6 +50,7 @@ class OverviewPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
                       child: _musicCard(
+                        context: context,
                         image: Assets.images.playlist.woodstockLegends
                             .provider(),
                         label: "Progressive Rock",
@@ -78,6 +82,7 @@ class OverviewPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsetsGeometry.fromLTRB(0, 0, 20, 0),
                       child: _musicCard(
+                        context: context,
                         image: Assets.images.playlist.deepFocus.provider(),
                         label: "Deep Focus",
                         likeCount: "678,612",
@@ -86,6 +91,7 @@ class OverviewPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsetsGeometry.fromLTRB(0, 0, 20, 0),
                       child: _musicCard(
+                        context: context,
                         image: Assets.images.playlist.productiveMorning
                             .provider(),
                         label: "Productive Morning",
@@ -95,6 +101,7 @@ class OverviewPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsetsGeometry.fromLTRB(0, 0, 20, 0),
                       child: _musicCard(
+                        context: context,
                         image: Assets.images.playlist.whiteNoise.provider(),
                         label: "White Noise",
                         likeCount: "146,264",
@@ -207,6 +214,7 @@ class OverviewPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsetsGeometry.fromLTRB(0, 0, 20, 0),
                       child: _musicCard(
+                        context: context,
                         image: Assets.images.playlist.composers.provider(),
                         label: "Russian Composers",
                         likeCount: "71,622",
@@ -215,6 +223,7 @@ class OverviewPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsetsGeometry.fromLTRB(0, 0, 20, 0),
                       child: _musicCard(
+                        context: context,
                         image: Assets.images.playlist.guitarSolos.provider(),
                         label: "Guitar Solos",
                         likeCount: "299,154",
@@ -223,6 +232,7 @@ class OverviewPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsetsGeometry.fromLTRB(0, 0, 20, 0),
                       child: _musicCard(
+                        context: context,
                         image: Assets.images.playlist.wORKOUTRock.provider(),
                         label: "Workout Rock",
                         likeCount: "414,228",
@@ -347,6 +357,8 @@ class OverviewPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsetsGeometry.fromLTRB(0, 0, 20, 0),
                       child: _musicCard(
+                        isMusic: true,
+                        context: context,
                         image: Assets.images.musicCover.image696.provider(),
                         label: "LP5",
                         description: "Apparat",
@@ -356,6 +368,8 @@ class OverviewPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsetsGeometry.fromLTRB(0, 0, 20, 0),
                       child: _musicCard(
+                        isMusic: true,
+                        context: context,
                         image: Assets.images.musicCover.image695.provider(),
                         label: "Numb Numb Juice",
                         description: "Schoolboy Q",
@@ -365,6 +379,8 @@ class OverviewPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsetsGeometry.fromLTRB(0, 0, 20, 0),
                       child: _musicCard(
+                        isMusic: true,
+                        context: context,
                         image: Assets.images.musicCover.image693.provider(),
                         label: "Drip or Down 2",
                         description: "Gunna",
@@ -463,6 +479,7 @@ class OverviewPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsetsGeometry.fromLTRB(0, 0, 20, 0),
                       child: _musicCard(
+                        context: context,
                         image: Assets.images.playlist.hipHopHits.provider(),
                         label: "Hip Hop Hits",
                         likeCount: "551,614",
@@ -471,6 +488,7 @@ class OverviewPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsetsGeometry.fromLTRB(0, 0, 20, 0),
                       child: _musicCard(
+                        context: context,
                         image: Assets.images.playlist.popFresh.provider(),
                         label: "Pop Fresh!",
                         likeCount: "422,318",
@@ -479,6 +497,7 @@ class OverviewPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsetsGeometry.fromLTRB(0, 0, 20, 0),
                       child: _musicCard(
+                        context: context,
                         image: Assets.images.playlist.rapBangers.provider(),
                         label: "Rap Bangers",
                         likeCount: "892,318",
@@ -507,67 +526,90 @@ class OverviewPage extends StatelessWidget {
   }
 
   Widget _musicCard({
+    required BuildContext context,
     required ImageProvider image,
     required String label,
     String likeCount = "",
     String description = "",
     String releaseTime = "",
+    bool isMusic = false,
   }) {
-    return Stack(
-      children: [
-        SizedBox(
-          width: 150,
-          child: Column(
-            children: [
-              Image(image: image, width: 150, height: 150),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(0, 5, 0, 5),
-                child: Align(
-                  alignment: AlignmentGeometry.centerLeft,
-                  child: Text(label, style: AppTextStyles.itemTitle),
-                ),
-              ),
-              likeCount != ""
-                  ? Row(
-                      children: [
-                        Icon(
-                          Icons.favorite,
-                          color: AppColors.secondaryTextColor,
-                          size: 15,
-                        ),
-                        SizedBox(width: 2),
-                        Text(likeCount, style: AppTextStyles.likeCount),
-                      ],
-                    )
-                  : const SizedBox.shrink(),
-              description != ""
-                  ? Align(
-                      alignment: AlignmentGeometry.centerLeft,
-                      child: Text(
-                        description,
-                        style: AppTextStyles.itemDescriptions,
-                      ),
-                    )
-                  : SizedBox.shrink(),
-              releaseTime != ""
-                  ? Align(
-                      alignment: AlignmentGeometry.centerLeft,
-                      child: Text(
-                        releaseTime,
-                        style: AppTextStyles.itemDescriptions,
-                      ),
-                    )
-                  : SizedBox.shrink(),
-            ],
+    return ElevatedButton(
+      onPressed: () {
+          if (isMusic) {
+            Navigator.push(
+              context,
+              CupertinoPageRoute(builder: (context) => SongPage()),
+            );
+          }
+        },
+      style: ButtonStyle(
+          overlayColor: WidgetStatePropertyAll(AppColors.navigationsBar.withAlpha(100)),
+          backgroundColor: WidgetStatePropertyAll(AppColors.bgColor),
+          shape: const WidgetStatePropertyAll(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(10))
+            ),
           ),
         ),
-        SizedBox(
+      child: Stack(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SizedBox(
+              width: 150,
+              child: Column(
+                children: [
+                  Image(image: image, width: 150, height: 150),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 5, 0, 5),
+                    child: Align(
+                      alignment: AlignmentGeometry.centerLeft,
+                      child: Text(label, style: AppTextStyles.itemTitle),
+                    ),
+                  ),
+                  likeCount != ""
+                      ? Row(
+                          children: [
+                            Icon(
+                              Icons.favorite,
+                              color: AppColors.secondaryTextColor,
+                              size: 15,
+                            ),
+                            SizedBox(width: 2),
+                            Text(likeCount, style: AppTextStyles.likeCount),
+                          ],
+                        )
+                      : const SizedBox.shrink(),
+                  description != ""
+                      ? Align(
+                          alignment: AlignmentGeometry.centerLeft,
+                          child: Text(
+                            description,
+                            style: AppTextStyles.itemDescriptions,
+                          ),
+                        )
+                      : SizedBox.shrink(),
+                  releaseTime != ""
+                      ? Align(
+                          alignment: AlignmentGeometry.centerLeft,
+                          child: Text(
+                            releaseTime,
+                            style: AppTextStyles.itemDescriptions,
+                          ),
+                        )
+                      : SizedBox.shrink(),
+                ],
+              ),
+            ),
+          ),
+          SizedBox(
           width: 150,
-          height: 150,
+          height: 165,
           child: Align(
             alignment: AlignmentGeometry.bottomLeft,
             child: Padding(
-              padding: EdgeInsetsGeometry.all(10),
+              padding: EdgeInsetsGeometry.all(15),
               child: Container(
                 width: 36,
                 height: 36,
@@ -582,7 +624,8 @@ class OverviewPage extends StatelessWidget {
             ),
           ),
         ),
-      ],
+        ],
+      ),
     );
   }
 

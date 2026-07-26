@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
+
 
 class MoodsModel {
   final int id;
   final String name;
-  final Image imageUrl;
+  final String imageUrl;
 
   const MoodsModel({
     required this.name,

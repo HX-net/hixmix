@@ -1,9 +1,8 @@
-import 'package:flutter/material.dart';
 
 class GenresModel {
   final int id;
   final String name;
-  final Image imageUrl;
+  final String imageUrl;
 
   const GenresModel({
     required this.name,
