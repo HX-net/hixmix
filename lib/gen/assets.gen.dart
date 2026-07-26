@@ -11,6 +11,43 @@
 
 import 'package:flutter/widgets.dart';
 
+class $AssetsIconsGen {
+  const $AssetsIconsGen();
+
+  /// File path: assets/icons/Dislike this song.png
+  AssetGenImage get dislikeThisSong =>
+      const AssetGenImage('assets/icons/Dislike this song.png');
+
+  /// File path: assets/icons/Like this song (mobile).png
+  AssetGenImage get likeThisSongMobile =>
+      const AssetGenImage('assets/icons/Like this song (mobile).png');
+
+  /// File path: assets/icons/Path 7.png
+  AssetGenImage get path7 => const AssetGenImage('assets/icons/Path 7.png');
+
+  /// File path: assets/icons/Rectangle 2569.png
+  AssetGenImage get rectangle2569 =>
+      const AssetGenImage('assets/icons/Rectangle 2569.png');
+
+  /// File path: assets/icons/Rectangle 2570.png
+  AssetGenImage get rectangle2570 =>
+      const AssetGenImage('assets/icons/Rectangle 2570.png');
+
+  /// File path: assets/icons/previous.png
+  AssetGenImage get previous =>
+      const AssetGenImage('assets/icons/previous.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+    dislikeThisSong,
+    likeThisSongMobile,
+    path7,
+    rectangle2569,
+    rectangle2570,
+    previous,
+  ];
+}
+
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
@@ -546,6 +583,7 @@ class $AssetsImagesPodcastCategoryGen {
 }
 
 abstract final class Assets {
+  static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
 }
 
