@@ -272,6 +272,18 @@ class $AssetsImagesMoodsGen {
 class $AssetsImagesMusicCoverGen {
   const $AssetsImagesMusicCoverGen();
 
+  /// File path: assets/images/music_cover/Image 296.png
+  AssetGenImage get image296 =>
+      const AssetGenImage('assets/images/music_cover/Image 296.png');
+
+  /// File path: assets/images/music_cover/Image 405.png
+  AssetGenImage get image405 =>
+      const AssetGenImage('assets/images/music_cover/Image 405.png');
+
+  /// File path: assets/images/music_cover/Image 408.png
+  AssetGenImage get image408 =>
+      const AssetGenImage('assets/images/music_cover/Image 408.png');
+
   /// File path: assets/images/music_cover/Image 574.png
   AssetGenImage get image574 =>
       const AssetGenImage('assets/images/music_cover/Image 574.png');
@@ -298,6 +310,9 @@ class $AssetsImagesMusicCoverGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
+    image296,
+    image405,
+    image408,
     image574,
     image575,
     image576,
